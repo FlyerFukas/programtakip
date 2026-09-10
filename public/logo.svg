@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Program Takip">
+  <!--
+    Program Takip logosu.
+
+    KARDEŞ UYGULAMADAN AYRIŞMA: Burs Takip'in ikonu mezuniyet kepi. İkisi
+    telefonun ana ekranında yan yana duracak; aynı mavi, aynı yuvarlatılmış
+    kare, aynı sarı vurgu kullanılıyor ki aile belli olsun — ama SİLUET
+    farklı olmak zorunda, yoksa 60 pikselde ikisi ayırt edilemez.
+
+    Buradaki siluet konum iğnesi. Uygulamanın asıl sorusu da bu: hangi
+    ülke. İğnenin içindeki kep programı, sarı disk de üstüne oturduğu hedefi
+    anlatıyor.
+
+    Kasıtlı olarak sade: 192 pikselde de, ana ekranda 60 pikselde de
+    okunması gerekiyor. İnce çizgi ve küçük detay yok.
+  -->
+
+  <defs>
+    <linearGradient id="zemin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3d61e0"/>
+      <stop offset="1" stop-color="#2843b3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Yuvarlatılmış kare zemin: iOS zaten maskeliyor, Android adaptive ikonda
+       da güvenli alanın içinde kalıyor. -->
+  <rect width="512" height="512" rx="112" fill="url(#zemin)"/>
+
+  <!-- İğnenin oturduğu hedef diski. Gölge değil, işaretin zemini —
+       o yüzden sarı, gri değil. -->
+  <ellipse cx="256" cy="434" rx="76" ry="19" fill="#ffd166"/>
+
+  <!-- Konum iğnesi: yuvarlak baş + aşağı doğru sivrilen uç. -->
+  <path d="M256 70 C186 70 130 126 130 196 C130 282 256 410 256 410
+           C256 410 382 282 382 196 C382 126 326 70 256 70 Z"
+        fill="#ffffff"/>
+
+  <!-- İğnenin içindeki mezuniyet kepi — "yüksek lisans programı".
+       Zemin renginde, yani iğnenin deliği gibi okunuyor. -->
+  <path d="M256 136 L330 172 L256 208 L182 172 Z" fill="#2843b3"/>
+  <path d="M210 186 L210 222 C210 222 228 240 256 240 C284 240 302 222 302 222 L302 186 L256 210 Z"
+        fill="#2843b3" opacity="0.88"/>
+</svg>

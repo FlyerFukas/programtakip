@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Program Takip">
+  <!--
+    SEKME İKONU (favicon) — public/logo.svg'nin sadeleştirilmiş hâli.
+
+    Neden ayrı dosya: tam logo 16 pikselde dağılıyor. Kepin tepesiyle gövdesi
+    tek bir bulanık lekeye iniyor, hedef diski de iğnenin ucuna yapışıyor.
+    Sekmede tanınırlık tek bir güçlü siluetten gelir, detaydan değil.
+
+    Burada yalnızca iğne var — kadraja yaslanmış, kalın. Kepin yerini klasik
+    iğne deliği alıyor ve o delik sarı: 16 pikselde bile bir renk noktası
+    kalsın, aile rengi kaybolmasın.
+  -->
+
+  <defs>
+    <linearGradient id="zemin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3d61e0"/>
+      <stop offset="1" stop-color="#2843b3"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="96" fill="url(#zemin)"/>
+
+  <!-- İğne: logodakinden geniş ve uzun, kenarlara yakın —
+       küçük boyutta hacmi bu taşıyor. -->
+  <path d="M256 56 C174 56 108 122 108 204 C108 302 256 456 256 456
+           C256 456 404 302 404 204 C404 122 338 56 256 56 Z"
+        fill="#ffffff"/>
+
+  <!-- Delik: 16 pikselde tek pikselden büyük kalsın diye geniş. -->
+  <circle cx="256" cy="204" r="68" fill="#ffd166"/>
+</svg>

@@ -1,0 +1,40 @@
+name: dogrula
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  dogrula:
+    name: types, lint, tests, build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Type check
+        run: npx tsc --noEmit
+
+      - name: Lint
+        run: npx next lint
+
+      # 185 rule tests + 55 parser tests + field coverage.
+      # All offline: no database, no API keys. `npm run sina` is the only
+      # suite that needs a live connection, so it stays out of CI.
+      - name: Tests
+        run: npm run dogrula
+
+      # Runs without any environment variables on purpose. Missing config
+      # must not break the build: the app renders a /kurulum page that names
+      # the missing variable instead of crashing.
+      - name: Build
+        run: npx next build

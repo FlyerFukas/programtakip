@@ -1,0 +1,22 @@
+node_modules/
+.next/
+out/
+build/
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+# KÖKTEKİ yedek klasörü — indirilen JSON yedekleri buraya konuyor.
+# Başındaki eğik çizgi ŞART: "yedek/" yazarsan her derinlikteki yedek
+# dizinini yutar ve `app/api/yedek/route.ts` sessizce depoya girmez.
+# Bir kez yaşandı: uygulama yerelde çalışıp canlıda 404 verdi.
+/yedek/
+
+# Ortam değişkenleri — hiçbir varyantı depoya gitmesin.
+# Tek istisna .env.local.example, o da aşağıda geri alınıyor.
+.env
+.env.*
+!.env.local.example
+
+# Vercel bağlantı klasörü ve geçici erişim jetonu — asla depoya gitmemeli.
+.vercel
+.vercel-token

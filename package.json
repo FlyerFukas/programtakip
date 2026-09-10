@@ -1,0 +1,37 @@
+{
+  "name": "program-takip",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "gizli": "node scripts/gizli-uret.js",
+    "sema": "node --import tsx --conditions=react-server --env-file=.env.local scripts/sema-uygula.ts",
+    "dogrula": "tsx scripts/dogrula-kurallar.ts && tsx scripts/dogrula-ayristirici.ts && tsx scripts/dogrula-alanlar.ts",
+    "dogrula:alanlar": "tsx scripts/dogrula-alanlar.ts",
+    "simge": "node scripts/simge-uret.js",
+    "sina": "node --import tsx --conditions=react-server --env-file=.env.local scripts/sina-baglanti.ts",
+    "dogrula:kurallar": "tsx scripts/dogrula-kurallar.ts",
+    "dogrula:ayristirici": "tsx scripts/dogrula-ayristirici.ts"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "mammoth": "^1.8.0",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^15.1.0",
+    "tsx": "^4.23.12",
+    "typescript": "^5.7.0"
+  }
+}
