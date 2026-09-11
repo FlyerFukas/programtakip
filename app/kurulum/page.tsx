@@ -74,6 +74,13 @@ export default function KurulumSayfasi() {
         ekle</strong> ekranı bunlara bağlı — <strong>biri yeterli</strong>,
         ikisi de tanımlıysa hangisinin okuyacağını o ekranda seçersin.
       </p>
+      <p className="k2 soluk-2 alt-m bosluk-0">
+        <strong>&quot;Tanımlı&quot; çalışıyor demek değil.</strong> Buradaki
+        onay yalnızca değerin dolu olduğunu söylüyor; anahtarın geçerli olup
+        olmadığı ancak istek gönderilince belli oluyor. İptal edilmiş bir
+        anahtarı silmezsen o sağlayıcı seçenek olarak görünmeye devam eder ve
+        her deneme hata verir — kullanmadığın değişkeni boş bırak.
+      </p>
 
       <div className="kart alt-m">
         <table>

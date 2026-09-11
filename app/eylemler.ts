@@ -19,7 +19,9 @@ import {
 import { HAVUZ_DURUMLARI, type HavuzDurum } from '@/lib/tipler'
 import { KUR_ANAHTARI, VARSAYILAN_KUR_AYARI, kurAyariniDogrula } from '@/lib/para'
 import { PARA_BIRIMLERI } from '@/lib/sabitler'
-import { yzHazirMi, yzIleAyristir, kullanilabilirSaglayicilar } from '@/lib/ayristir-yz'
+import {
+  yzHazirMi, yzIleAyristir, kullanilabilirSaglayicilar, SAGLAYICI_ADLARI,
+} from '@/lib/ayristir-yz'
 import { dosyadanMetin } from '@/lib/dosya-metin'
 import { EN_BUYUK_DOSYA } from '@/lib/dosya-sabitleri'
 import { bugun } from '@/lib/tarih'
@@ -496,8 +498,30 @@ export async function metinAyristirEylem(
     return { sonuc, universiteId, eslesmeyenUniversite }
   } catch (e) {
     yonlendirmeyseFirlat(e)
-    return { hata: hataMetni(e) }
+    return { hata: okunanSaglayiciHatasi(e, fd) }
   }
+}
+
+/**
+ * Sağlayıcı hatasına "diğerini dene" ipucu ekler.
+ *
+ * NEDEN: anahtarın TANIMLI olması çalıştığı anlamına gelmiyor. Furkan'ın
+ * Gemini anahtarı iptal edildi ama değer Vercel'de kaldı; uygulama Gemini'yi
+ * seçenek olarak sunmaya devam etti ve her deneme hatayla bitti. Kullanıcı
+ * ekranda kalakalıyordu — oysa çalışan bir sağlayıcı bir tık ötedeydi.
+ *
+ * Otomatik olarak diğerine geçmiyoruz: bu bir yapılandırma sorunu ve sessiz
+ * yedekleme onu kalıcı olarak gizlerdi. Sorun görünür kalsın, kullanıcı
+ * tıkanmasın.
+ */
+function okunanSaglayiciHatasi(e: unknown, fd: FormData): string {
+  const mesaj = hataMetni(e)
+  const secilen = String(fd.get('saglayici') ?? '')
+  const digerleri = kullanilabilirSaglayicilar().filter((s) => s !== secilen)
+  if (!secilen || digerleri.length === 0) return mesaj
+
+  const adlar = digerleri.map((s) => SAGLAYICI_ADLARI[s]).join(' ya da ')
+  return `${mesaj} ${adlar} ile deneyebilirsin — yukarıdan seçip tekrar gönder.`
 }
 
 /* ════════════════════════════════════════════════ yedekleme (Aşama 14) */
