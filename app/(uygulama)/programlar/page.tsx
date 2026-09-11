@@ -3,7 +3,7 @@ import { programlariGetir, ulkeleriGetir, ayarGetir } from '@/lib/sorgular'
 import { KUR_ANAHTARI, kurAyariniDogrula } from '@/lib/para'
 import { ProgramlarIstemci } from './ProgramlarIstemci'
 
-export const metadata = { title: 'Programlar — Program Takip' }
+export const metadata = { title: 'Programlar — Bölüm Takip' }
 export const dynamic = 'force-dynamic'
 
 /**

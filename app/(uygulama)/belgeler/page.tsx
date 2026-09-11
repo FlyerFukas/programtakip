@@ -7,7 +7,7 @@ import { BosDurum } from '@/bilesenler/Rozetler'
 import { BelgeSatiriKarti } from './BelgeSatiriKarti'
 import { HavuzKarti } from './HavuzKarti'
 
-export const metadata = { title: 'Belgeler — Program Takip' }
+export const metadata = { title: 'Belgeler — Bölüm Takip' }
 export const dynamic = 'force-dynamic'
 
 /**

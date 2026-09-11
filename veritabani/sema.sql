@@ -1,5 +1,5 @@
 -- ============================================================================
---  Program Takip — veritabanı şeması  (Neon / PostgreSQL)
+--  Bölüm Takip — veritabanı şeması  (Neon / PostgreSQL)
 --
 --  UYGULAMA:  npm run sema
 --  Betik .env.local'deki DATABASE_URL'i okuyup bu dosyayı çalıştırır.

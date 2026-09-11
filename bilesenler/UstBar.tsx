@@ -57,7 +57,7 @@ export function UstBar() {
                 çiziliyor ve markayı taşımıyor. Boyut sabit verildi ki yazı
                 tipi ölçeğinden etkilenmesin. */}
             <img src="/logo.svg" alt="" width={22} height={22} className="marka-logo" />
-            <span>Program Takip</span>
+            <span>Bölüm Takip</span>
           </Link>
 
           <nav className="gezinti buyu masaustu-gezinti" aria-label="Ana gezinti">

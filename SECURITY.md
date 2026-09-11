@@ -2,7 +2,7 @@
 
 ## Reporting a vulnerability
 
-Open a [security advisory](https://github.com/mrFurkan33333/program-takip/security/advisories/new)
+Open a [security advisory](https://github.com/FlyerFukas/programtakip/security/advisories/new)
 or a private issue. Please do not disclose publicly before a fix is available.
 
 ## Threat model

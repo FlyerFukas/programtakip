@@ -6,7 +6,7 @@ import {
   DurumRozeti, OncelikRozeti, DonusUyarisi, EtiketListesi, Para, BosDurum,
 } from '@/bilesenler/Rozetler'
 
-export const metadata = { title: 'Ülkeler — Program Takip' }
+export const metadata = { title: 'Ülkeler — Bölüm Takip' }
 export const dynamic = 'force-dynamic'
 
 /**

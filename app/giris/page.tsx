@@ -2,7 +2,7 @@ import { redirect } from 'next/navigation'
 import { oturumVar, korumaHazirMi } from '@/lib/auth'
 import { GirisFormu } from './GirisFormu'
 
-export const metadata = { title: 'Giriş — Program Takip' }
+export const metadata = { title: 'Giriş — Bölüm Takip' }
 
 export default async function GirisSayfasi() {
   if (!korumaHazirMi()) redirect('/kurulum')
@@ -23,7 +23,7 @@ export default async function GirisSayfasi() {
           height={52}
           style={{ borderRadius: 12, display: 'block', margin: '0 auto 10px' }}
         />
-        <h1>Program Takip</h1>
+        <h1>Bölüm Takip</h1>
         <p className="soluk k1 ust-s">
           Yüksek lisans programları: ülke, üniversite, bölüm. Son tarihler,
           maliyet ve uygunluk tek yerde.

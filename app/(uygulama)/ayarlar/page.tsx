@@ -5,7 +5,7 @@ import { tarihFormat } from '@/lib/tarih'
 import { KurFormu } from './KurFormu'
 import { YedekBolumu } from './YedekBolumu'
 
-export const metadata = { title: 'Ayarlar — Program Takip' }
+export const metadata = { title: 'Ayarlar — Bölüm Takip' }
 export const dynamic = 'force-dynamic'
 
 export default async function AyarlarSayfasi() {

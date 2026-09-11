@@ -2,7 +2,7 @@ import { universiteleriGetir } from '@/lib/sorgular'
 import { kullanilabilirSaglayicilar, SAGLAYICI_ADLARI } from '@/lib/ayristir-yz'
 import { MetinEkle } from './MetinEkle'
 
-export const metadata = { title: 'Metinden ekle — Program Takip' }
+export const metadata = { title: 'Metinden ekle — Bölüm Takip' }
 export const dynamic = 'force-dynamic'
 
 /**

@@ -28,7 +28,10 @@ export async function GET() {
 
   try {
     const yedek = await yedekAl()
-    const dosyaAdi = `program-takip-yedek-${bugun()}.json`
+    /* Dosya adı uygulamanın adını taşıyor ama geri yükleme dosya adına
+       BAKMIYOR — yalnızca içerideki `surum` alanına. Eski adla indirilmiş
+       yedekler de sorunsuz geri yüklenir. */
+    const dosyaAdi = `bolum-takip-yedek-${bugun()}.json`
 
     return new NextResponse(JSON.stringify(yedek, null, 2), {
       status: 200,

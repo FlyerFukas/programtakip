@@ -1,4 +1,4 @@
-# Program Takip
+# Bölüm Takip
 
 [![CI](https://github.com/FlyerFukas/programtakip/actions/workflows/dogrula.yml/badge.svg)](https://github.com/FlyerFukas/programtakip/actions/workflows/dogrula.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -10,7 +10,7 @@
 
 Most European universities close applications for non-EU/EEA applicants weeks
 or months before EU applicants. The date printed largest on the programme page
-is usually the EU one. Program Takip stores both rounds separately and counts
+is usually the EU one. Bölüm Takip stores both rounds separately and counts
 down to yours.
 
 Built for a single applicant tracking dozens of programmes across countries.

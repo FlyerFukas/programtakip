@@ -8,7 +8,7 @@ export const dynamic = 'force-dynamic'
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   const p = await programGetir(id)
-  return { title: p ? `${p.ad} düzenle — Program Takip` : 'Bulunamadı — Program Takip' }
+  return { title: p ? `${p.ad} düzenle — Bölüm Takip` : 'Bulunamadı — Bölüm Takip' }
 }
 
 export default async function ProgramDuzenleSayfasi({

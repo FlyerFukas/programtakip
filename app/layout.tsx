@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Program Takip',
+  title: 'Bölüm Takip',
   description: 'Yüksek lisans programları: ülke, üniversite, bölüm — son tarih, maliyet, uygunluk.',
   // Bu kişisel bir not defteri — arama motorlarında görünmesin.
   // İkinci savunma hattı next.config.mjs'teki X-Robots-Tag başlığı,
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   // iOS'ta ana ekrandan açılınca tam ekran davransın.
   appleWebApp: {
     capable: true,
-    title: 'Program Takip',
+    title: 'Bölüm Takip',
     statusBarStyle: 'black-translucent',
   },
 }

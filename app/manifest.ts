@@ -16,8 +16,8 @@ import type { MetadataRoute } from 'next'
  */
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Program Takip',
-    short_name: 'Program Takip',
+    name: 'Bölüm Takip',
+    short_name: 'Bölüm Takip',
     description: 'Yüksek lisans programları: ülke, üniversite, bölüm — son tarih, maliyet, uygunluk.',
     lang: 'tr',
     dir: 'ltr',

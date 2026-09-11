@@ -1,7 +1,7 @@
 import { korumaHazirMi } from '@/lib/auth'
 import { veritabaniHazirMi } from '@/lib/veritabani'
 
-export const metadata = { title: 'Kurulum — Program Takip' }
+export const metadata = { title: 'Kurulum — Bölüm Takip' }
 export const dynamic = 'force-dynamic'
 
 /**

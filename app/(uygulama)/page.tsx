@@ -12,7 +12,7 @@ import {
 } from '@/bilesenler/Rozetler'
 import type { ProgramGenis } from '@/lib/tipler'
 
-export const metadata = { title: 'Panel — Program Takip' }
+export const metadata = { title: 'Panel — Bölüm Takip' }
 export const dynamic = 'force-dynamic'
 
 /** Panelde kaç satır gösterilecek — "hepsi" değil, "şimdi bakman gerekenler". */

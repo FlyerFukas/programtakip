@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { universiteSecenekleri } from '@/lib/sorgular'
 import { ProgramFormu } from '@/bilesenler/ProgramFormu'
 
-export const metadata = { title: 'Yeni program — Program Takip' }
+export const metadata = { title: 'Yeni program — Bölüm Takip' }
 export const dynamic = 'force-dynamic'
 
 export default async function YeniProgramSayfasi() {

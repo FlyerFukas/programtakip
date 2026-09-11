@@ -1,4 +1,4 @@
-# Program Takip: Proje Şartnamesi
+# Bölüm Takip: Proje Şartnamesi
 
 > **Bu dosya yeni bir Claude Code sohbetine verilecek eksiksiz brief'tir.**
 > Okuyan oturumun bu projeye dair başka hiçbir bağlamı yok. İhtiyacın olan
@@ -8,7 +8,7 @@
 
 ## 0. Bu belge nedir
 
-Program Takip'in şartnamesi ve tasarım günlüğü. Ne yapıldığını değil,
+Bölüm Takip'in şartnamesi ve tasarım günlüğü. Ne yapıldığını değil,
 **neden öyle yapıldığını** anlatır: hangi kararın arkasında hangi gerçek
 sorun var, hangi basitleştirme neyi bozar.
 
@@ -83,7 +83,7 @@ sebebi §8.3.)
 
 ### 3.2 Tersine dönen
 
-| BursTakip | Program Takip |
+| BursTakip | Bölüm Takip |
 |---|---|
 | `kapsam`: burs neyi karşılıyor | **maliyet**: program ne kadar tutuyor |
 | `burs_tutari` (serbest metin) | `ogrenim_ucreti` (sayı) + `para_birimi` |

@@ -1,4 +1,4 @@
-# Program Takip
+# Bölüm Takip
 
 [![CI](https://github.com/FlyerFukas/programtakip/actions/workflows/dogrula.yml/badge.svg)](https://github.com/FlyerFukas/programtakip/actions/workflows/dogrula.yml)
 [![Lisans: MIT](https://img.shields.io/badge/Lisans-MIT-blue.svg)](LICENSE)
@@ -11,7 +11,7 @@ bir uygulama.**
 
 Avrupa üniversitelerinin çoğunda AB/AEA dışı başvuru, AB başvurusundan
 haftalar hatta aylar önce kapanıyor. Program sayfasında en büyük puntoyla
-yazan tarih ise genelde AB tarihi. Program Takip iki turu ayrı tutuyor ve
+yazan tarih ise genelde AB tarihi. Bölüm Takip iki turu ayrı tutuyor ve
 geri sayımı senin turuna göre yapıyor.
 
 Tek bir başvuru sahibinin onlarca programı takip etmesi için yazıldı. CRM

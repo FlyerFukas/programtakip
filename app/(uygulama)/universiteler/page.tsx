@@ -7,7 +7,7 @@ import {
 } from '@/bilesenler/Rozetler'
 import type { UniversiteGenis } from '@/lib/tipler'
 
-export const metadata = { title: 'Üniversiteler — Program Takip' }
+export const metadata = { title: 'Üniversiteler — Bölüm Takip' }
 export const dynamic = 'force-dynamic'
 
 /**

@@ -15,7 +15,7 @@ export const dynamic = 'force-dynamic'
 export async function generateMetadata({ params }: { params: Promise<{ kod: string }> }) {
   const { kod } = await params
   const ulke = await ulkeGetir(kod.toUpperCase())
-  return { title: ulke ? `${ulke.ad} — Program Takip` : 'Bulunamadı — Program Takip' }
+  return { title: ulke ? `${ulke.ad} — Bölüm Takip` : 'Bulunamadı — Bölüm Takip' }
 }
 
 /**

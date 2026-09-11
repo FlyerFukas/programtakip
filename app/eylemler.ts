@@ -563,7 +563,7 @@ export async function yedekYukleEylem(
        yüklemek yerine burada durmalı. */
     const y = cozulmus as Partial<Yedek>
     if (!y || typeof y !== 'object' || y.surum !== 1) {
-      return { hata: 'Bu dosya bir Program Takip yedeği değil (sürüm bilgisi yok).' }
+      return { hata: 'Bu dosya bir Bölüm Takip yedeği değil (sürüm bilgisi yok).' }
     }
     if (!Array.isArray(y.ulkeler) || !Array.isArray(y.programlar)) {
       return { hata: 'Yedek dosyası eksik görünüyor — ülke ya da program listesi yok.' }

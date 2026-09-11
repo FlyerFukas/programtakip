@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { UlkeFormu } from '@/bilesenler/UlkeFormu'
 
-export const metadata = { title: 'Yeni ülke — Program Takip' }
+export const metadata = { title: 'Yeni ülke — Bölüm Takip' }
 
 export default function YeniUlkeSayfasi() {
   return (
